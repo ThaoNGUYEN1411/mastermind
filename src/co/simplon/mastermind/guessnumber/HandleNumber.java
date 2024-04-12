@@ -1,4 +1,4 @@
-package co.simplon.mastermind.guessnumber;
+/*package co.simplon.mastermind.guessnumber;
 
 public class HandleNumber {
     private StringBuilder firstCompuGuess = new StringBuilder();
@@ -8,4 +8,4 @@ public class HandleNumber {
         return  firstCompuGuess;
     }
 
-}
+}*/

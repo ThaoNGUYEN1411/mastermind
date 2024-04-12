@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static co.simplon.mastermind.handleNumber.DecomposeNumber.decompose;
+import static co.simplon.mastermind.handleNumber.RepeatString.repeatString;
 
 public class InputNumber {
     public static void main(String[] args) {
@@ -12,13 +13,14 @@ public class InputNumber {
 
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
-        System.out.println(input.length());
+
         ArrayList<Integer> inputNumber = decompose(Integer.parseInt(input));
+        int numberEnter = input.length();
+        String firstnumber = repeatString("5",numberEnter);
 
-
-        System.out.println("555555555");
+        System.out.println(firstnumber);
         ArrayList<Integer> compGuess = decompose(Integer.parseInt(
-                "555555555"));
+                firstnumber));
 
         int time = 0;
         while (time<3){
