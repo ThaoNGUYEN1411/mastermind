@@ -12,9 +12,9 @@ public class Main {
         System.out.println("Choose the difficulty level you want:");
         System.out.println("1. Very easy");
         System.out.println("2. Easy");
-        System.out.println("3.Normal");
-        System.out.println("4.Hard");
-        System.out.println("5.Hardcode");
+        System.out.println("3. Normal");
+        System.out.println("4. Hard");
+        System.out.println("5. Hardcode");
 
         int level = scanner.nextInt();
         int numberdigits = 0;

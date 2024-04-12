@@ -9,18 +9,19 @@ import static co.simplon.mastermind.handleNumber.RepeatString.repeatString;
 public class InputNumber {
     public static void main(String[] args) {
         System.out.println("Welcome to mastermind puzzle.");
-        System.out.println("Enter a number between 0000 and 9999");
+        System.out.println("Enter a number( contains from 2 to 16 digits)");
 
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
 
-        ArrayList<Integer> inputNumber = decompose(Integer.parseInt(input));
-        int numberEnter = input.length();
-        String firstnumber = repeatString("5",numberEnter);
+        ArrayList<Integer> inputNumber = decompose(Long.parseLong(input));
 
-        System.out.println(firstnumber);
+        int digitsEnter = input.length();
+        String firstNumber = repeatString("5", digitsEnter);
+
+        System.out.println(firstNumber);
         ArrayList<Integer> compGuess = decompose(Integer.parseInt(
-                firstnumber));
+                firstNumber));
 
         int time = 0;
         while (time<3){
